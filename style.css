@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  font-size: 16px;
+  background-color: hsl(204, 43%, 93%);
+  margin-top: 5%;
+}
+
+main {
+  width: 42%;
+  height: 60%;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.subset {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.community {
+  background-color: white;
+  padding: 35px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.community h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 1.5em;
+}
+
+.community p {
+  padding-bottom: 10px;
+  color: hsl(218, 22%, 67%);
+  line-height: 1.5;
+}
+
+.community .guarantee {
+  color: hsl(71, 73%, 54%);
+  padding: 20px 0 10px 0;
+  font-weight: 700;
+}
+
+.subscription {
+  background-color: hsl(218, 22%, 67%);
+  padding: 35px;
+  color: white;
+  border-bottom-left-radius: 10px;
+}
+
+.cost {
+  font-size: 1.7em;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.mid {
+  position: relative;
+  top: -5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: hsl(204, 43%, 93%);
+}
+
+.subscription button {
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  padding: 15px;
+  width: 100%;
+  color: white;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+
+.subscription div {
+  padding-bottom: 5px;
+}  
+
+.topic {
+  padding-bottom: 15px;
+  font-weight: 700;
+  color: white;
+  font-size: 1.2em;
+}
+
+.why {
+  background-color: hsl(179, 62%, 43%);
+  padding: 35px;
+  color: hsl(204, 43%, 93%);
+  font-size: 0.8em;
+  border-bottom-right-radius: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  color: hsl(204, 43%, 93%);
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    width: 90%;
+  }
+
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+  }
+
+  .subset {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .subscription {
+    border-radius: unset;
+  }
+
+  .why {
+    border-bottom-left-radius: 10px;
+  }
+}
